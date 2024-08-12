@@ -1,0 +1,15 @@
+{
+  "name": "HelloPipefy",
+  "short_description": "HelloPipefy is a sample app demonstrating how to customize Pipefy components with \"Hello World\" examples.",
+  "description": "HelloPipefy is a beginner-friendly sample app designed to showcase the integration capabilities of Pipefy's SDK using React. This application demonstrates how to customize various components within the Pipefy platform, including pipe views, card tabs, card buttons, dropdown menus, pipe buttons, modals, and sidebars. By providing simple \"Hello World\" examples, HelloPipefy helps developers understand the basics of extending and interacting with Pipefy's powerful workflow automation tools.",
+  "icon": "./pfy.png",
+  "author": "Pipefy, Inc.",
+  "init_url": "./",
+  "screenshots": [
+    "./screenshots/card-tab.png"
+  ],
+  "features": [
+    "pipe-buttons",
+    "card-tab"
+  ]
+}
