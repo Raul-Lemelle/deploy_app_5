@@ -1,4 +1,4 @@
-# Pipefy Sample App
+# HelloPipefy Sample App
 
 This is a sample application that integrates Pipefy using React and Pipefy's SDK.
 
