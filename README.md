@@ -1,48 +1,60 @@
-# Hello website!
+# Pipefy Sample App
 
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen ✨ immediately in the preview window. On the left you'll see the files that make up your site, including HTML, JavaScript, and CSS. You can upload assets like images or audio in `assets`. The rest is up to you and your imagination. 🦄
+This is a sample application that integrates Pipefy using React and Pipefy's SDK.
 
-_Last updated: 28 Feb 2023_
+## Application Setup
 
-## What's in this project?
+To run the application locally, use the following commands:
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
-
-← `index.html`: This is the main web page for your site. The HTML defines the structure and content of the page using _elements_. You'll see references in the HTML to the JS and CSS files. Try clicking the image in the center of the page!
-
-← `style.css`: CSS files add styling rules to your content. The CSS applies styles to the elements in your HTML page. The style rules also make the image move when you click it.
-
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript. The code in the JavaScript file runs when the page loads, and when the visitor clicks the button you can add using the code in the TODO.
-
-Open each file and check out the comments (in gray) for more info.
-
-## Try this next 🏗️
-
-Take a look in `TODO.md` for next steps you can try out in your new site!
-
-___Want a minimal version of this project to build your own website? Check out [Blank Website](https://glitch.com/edit/#!/remix/glitch-blank-website)!___
-
-## Ready to share your site?
-
-Add these meta tags for SEO and social sharing between your page `<head></head>` tags, changing the values for your site:
-
-```
-<link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-<meta name="description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta name="robots" content="index,follow" />
-<meta property="og:title" content="Hello World!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-<meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own."/>
-<meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"/>
-<meta name="twitter:card" content="summary" />
+```sh
+npm install
+npm run dev
 ```
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-## You built this with Glitch!
+## Publishing your application
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+Once you have finished coding, you'll need to build the code and publish it to your desired hosting service.
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+Use the following command to generate the final code you'll need to upload:
+
+```sh
+npm run build
+```
+
+Once finished, a folder called `dist` will be created. You should upload only the contents of that folder to your desired hosting server.
+
+You can also use the command below to preview how your application would look in a production build while watching for changes in your code:
+
+```sh
+npm run preview
+```
+
+Check Vite's documentation for options to deploy your project to the web: [https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site](https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site)
+
+## Technologies
+
+This app was built using the following technologies:
+
+- [React](https://react.dev/), a modern JavaScript library to build reusable components;
+- [react-router-dom](https://reactrouter.com/en/main/start/overview#client-side-routing), a library to create routes on the client side;
+- [Vite](https://vitejs.dev/), a build tool that allows fast local development and code transformation for production builds.
+
+## File Descriptions
+
+### [src/index.jsx](src/index.jsx)
+
+This is where your application routes will be created.
+
+You'll need to create a new route for each new feature you want to create.
+
+### [src/routes/Main.jsx](src/routes/Main.jsx)
+
+This is the main application component, and it is where you'll add the features your application will use.
+
+See: https://developers.pipefy.com/docs/features
+
+### [src/routes/CardTab.jsx](src/routes/CardTab.jsx)
+
+This component represents a specific route in the application. It is used to display content related to the [card tab feature](https://developers.pipefy.com/docs/card-tab).
