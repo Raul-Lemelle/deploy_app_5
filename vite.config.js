@@ -9,7 +9,7 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0",
-    port: 3000,
+    port: process.env.PORT || 3000, // dinamic port Heroku
     strictPort: true,
     hmr: {
       clientPort: 443 // Run the websocket server on the SSL port
